@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('https://cdn.pixabay.com/photo/2019/12/06/19/06/gifts-4678018_960_720.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.box {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 600px;
+	height: 800px;
+	background-image: url('https://media.istockphoto.com/id/1348081963/photo/red-christmas-background-with-fir-branches-and-decorations.jpg?s=612x612&w=0&k=20&c=YvSp4qSL15PWVeoq2mCAA0p4VhFRH3GlQb1cCKn_L14=');
+	background-position: center;
+	background-size: cover;
+	box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+	border-radius: 8px;
+}
+.logo {
+	font-family: 'Dancing Script';
+	position: absolute;
+	display: block;
+	top: 110px;
+	right: 30px;
+	font-size: 2.3rem;
+	text-transform: uppercase;
+}
+.date {
+	position: absolute;
+	top: 60px;
+	right: 30px;
+	font-size: 1rem;
+}
+span {
+	font-weight: bold;
+}
+.winner-infos {
+	position: absolute;
+	top: 200px;
+	padding-bottom: 50px;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.winner-info {
+	padding-bottom: 30px;
+	font-size: 2rem;
+}
+
+.plain {
+	font-size: 2rem;
+	text-align: center;
+	color: antiquewhite;
+	padding: 10px 0;
+}
+.searching-winner {
+	position: absolute;
+	bottom: 120px;
+	width: 220px;
+	height: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+.button-text-plain {
+	position: absolute;
+	bottom: 50px;
+	font-size: 1.5rem;
+	color: beige;
+}
