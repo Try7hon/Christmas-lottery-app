@@ -35,21 +35,31 @@ const lottery = workers[Math.floor(Math.random(workers) * workers.length)];
 const searchWinner = () => {
 	if (winner.length <= 0) {
 		winner.push(workers[Math.floor(Math.random(workers) * workers.length)]);
-		console.log(winner.flat());
-		showWinner();
-		showGift();
+
+		setTimeout(showWinnerName, 1000);
+		setTimeout(showWinnerShift, 2000);
+		setTimeout(showWinnerPosition, 3000);
+		setTimeout(showGift, 4000);
 	} else {
-		console.log(`okej`);
-		showWinner();
-		showGift();
+		nameShow.textContent = '';
+		positionShow.textContent = '';
+		shiftShow.textContent = '';
+		giftShow.innerHTML = '';
+		setTimeout(showWinnerName, 1000);
+		setTimeout(showWinnerShift, 2000);
+		setTimeout(showWinnerPosition, 3000);
+		setTimeout(showGift, 4000);
 		winner.shift();
 		winner.push(workers[Math.floor(Math.random(workers) * workers.length)]);
-		console.log(winner.flat());
 	}
 };
-const showWinner = () => {
+const showWinnerName = () => {
 	nameShow.textContent = `${winner[0].slice(0, 1)}`;
+};
+const showWinnerPosition = () => {
 	positionShow.textContent = `${winner[0].slice(2, 3)}`;
+};
+const showWinnerShift = () => {
 	shiftShow.textContent = `${winner[0].slice(1, 2)}`;
 };
 const showGift = () => {
@@ -60,9 +70,9 @@ btn.addEventListener('click', searchWinner);
 const christmasDate = 25;
 const date = new Date();
 let day = date.getDate();
-const diffDays = Math.round(christmasDate - day);
+const diffDays = christmasDate - day;
 const showDate = () => {
-	span.innerHTML = `${diffDays}`;
+	span.innerHTML = ` ${diffDays}`;
 };
 showDate();
 console.log(diffDays);

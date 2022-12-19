@@ -78,10 +78,14 @@ span {
 	border-radius: 8px;
 	border: none;
 	cursor: pointer;
+	transition: background-color 0.3s;
 }
 .button-text-plain {
 	position: absolute;
 	bottom: 50px;
 	font-size: 1.5rem;
 	color: beige;
+}
+.searching-winner:hover {
+	background-color: beige;
 }
