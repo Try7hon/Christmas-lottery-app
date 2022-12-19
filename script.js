@@ -57,12 +57,12 @@ const showGift = () => {
 };
 
 btn.addEventListener('click', searchWinner);
-
+const christmasDate = 25;
 const date = new Date();
 let day = date.getDate();
-let month = date.getMonth();
-let currentDate = `${day}.${month + 1}`;
+const diffDays = Math.round(christmasDate - day);
 const showDate = () => {
-	span.innerHTML = ` ${day}.${month + 1}`;
+	span.innerHTML = `${diffDays}`;
 };
 showDate();
+console.log(diffDays);
